@@ -1,0 +1,23 @@
+﻿<Window x:Class="RuleAPP.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RuleAPP"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"  Background="White" 
+        mc:Ignorable="d" Height="560" Width="800" Title="Rul">
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60" />
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Background="#FF76E383"/>
+        <Image Source="/logo.png" Margin="6,0,726,0" />
+        <Button Name="btnBack" Content="Назад" Margin="651,0,0,0" VerticalAlignment="Center" Height="40" Background="#FF498C51" FontFamily="Comic Sans MS" HorizontalAlignment="Left" Width="120" FontWeight="Bold" Click="btnBack_Click"/>
+        <Frame x:Name="MainWin" NavigationUIVisibility ="Hidden" Grid.Row="1" ContentRendered="MainWin_ContentRendered" Margin="0,5,0,5"  />
+    </Grid>
+</Window>
